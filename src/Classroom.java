@@ -1,9 +1,9 @@
 /**
  * @author Samip Khanal
  * 
- * Class room class that extends from  room
+ *         Class room class that extends from room
  */
-public class Classroom extends Room{
+public class Classroom extends Room {
 
     /**
      * instance variable for number of chairs
@@ -14,23 +14,24 @@ public class Classroom extends Room{
      * 
      * @param area
      * 
-     * it takes parameter area and passes it to superclass
+     *             it takes parameter area and passes it to superclass
      */
-    public Classroom(int area){
+    public Classroom(int area) {
         super(area);
     }
 
     /**
      * 
      * @param area
-     * it takes parameter area and passes it to superclass
+     *                       it takes parameter area and passes it to superclass
      * 
      * @param numberOfChairs
-     * this constructor is used when there are two arguments
-     * this  takes the number of chair of the room as a second  parameter
+     *                       this constructor is used when there are two arguments
+     *                       this takes the number of chair of the room as a second
+     *                       parameter
      */
 
-    public Classroom(int area, int numberOfChairs){
+    public Classroom(int area, int numberOfChairs) {
         super(area);
         this.numberOfChairs = numberOfChairs;
     }
@@ -50,19 +51,21 @@ public class Classroom extends Room{
     }
 
     /**
-     * it override the getcapacity method from the room class and returns the number of chairs 
+     * it override the getcapacity method from the room class and returns the number
+     * of chairs
      */
     @Override
-    public int getCapacity(){
+    public int getCapacity() {
         return getNumberOfChairs();
     }
 
     /**
-     * it overrides the toString method and prints the capacity and number of the chairs in the room
+     * it overrides the toString method and prints the capacity and number of the
+     * chairs in the room
      */
     @Override
-    public String toString(){
-        return("The capacity of the room is "+ getCapacity() + "and the number of chairs is "+ getNumberOfChairs());
+    public String toString() {
+        return ("The capacity of the room is " + getCapacity() + " and the number of chairs is " + getNumberOfChairs());
     }
 
 }
